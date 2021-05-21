@@ -57,3 +57,6 @@
 {"level":"info","time":"2021-05-08T12:56:46.949+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
 {"level":"info","time":"2021-05-21T08:44:09.500+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
 {"level":"info","time":"2021-05-21T11:03:47.996+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-21T18:51:34.168+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-21T18:51:38.181+0800","linenum":"app/app.go:120","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-05-21T18:51:38.181+0800","linenum":"app/app.go:132","msg":"服务退出"}
