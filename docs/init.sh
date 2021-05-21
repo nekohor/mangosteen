@@ -30,6 +30,7 @@ cd mangosteen
 export GO111MODULE=on
 export GO111MODULE=off
 cp -r vendor/. /root/go/src
+go build
 
 # supervisor
 pip install supervisor-XXX.wheel
