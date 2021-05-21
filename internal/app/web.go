@@ -8,7 +8,7 @@ import (
 	"github.com/nekohor/mangosteen/internal/app/config"
 	"github.com/nekohor/mangosteen/internal/app/middleware"
 	"github.com/nekohor/mangosteen/internal/app/router"
-	_ "github.com/nekohor/mangosteen/internal/app/swagger"
+	_ "github.com/nekohor/mangosteen/docs/swagger"
 	"github.com/nekohor/mangosteen/pkg/logger/zap/logger"
 )
 

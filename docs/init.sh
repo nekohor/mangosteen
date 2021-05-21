@@ -4,7 +4,7 @@ go get -u github.com/swaggo/swag/cmd/swag
 
 # @mangosteen package
 wire gen ./internal/app
-swag init --generalInfo ./cmd/mangosteen/main.go --output ./internal/app/swagger
+swag init --generalInfo ./bin/mangosteen/main.go --output ./docs/swagger
 
 # @cmd mangosteen package
 # native build
@@ -29,7 +29,7 @@ unzip mangosteen.zip -d mangosteen
 cd mangosteen
 export GO111MODULE=on
 export GO111MODULE=off
-cp -r vendor/. /root/go/src
+/bin/cp -rf vendor/. /root/go/src
 go build
 
 # supervisor

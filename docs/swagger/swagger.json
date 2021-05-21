@@ -1,0 +1,132 @@
+{
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "提供与FSP平台基础业务有关的杂七杂八微服务",
+        "title": "宇阳的杂七杂八微服务",
+        "contact": {
+            "name": "王宇阳",
+            "email": "nekohor@foxmail.com"
+        },
+        "version": "0.0.1"
+    },
+    "basePath": "/",
+    "paths": {
+        "/api/v1/category/steelgrade": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "tags": [
+                    "查询数据"
+                ],
+                "summary": "根据钢种牌号查询钢种分类结果，目前有4个维度",
+                "parameters": [
+                    {
+                        "default": "{\"steelGrade\":\"M510L\"}",
+                        "description": "钢种牌号",
+                        "name": "steelGrade",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\": 200, \"data\": {\"steelGrade\": \"M510L\", \"category1\": \"商品材\", \"category2\": \"高强商品材\", \"category3\": \"大梁钢\", \"category4\": \"\"}, \"message\": \"\"}",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    },
+                    "401": {
+                        "description": "未授权",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    },
+                    "500": {
+                        "description": "服务器错误",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/unqualified/rollbreak": {
+            "post": {
+                "security": [
+                    {
+                        "ApiKeyAuth": []
+                    }
+                ],
+                "tags": [
+                    "查询数据"
+                ],
+                "summary": "根据日期查询轧破甩尾统计数",
+                "parameters": [
+                    {
+                        "default": "{\"queryDate\":\"2021-05-20\"}",
+                        "description": "查询日期",
+                        "name": "queryDate",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\": 200, \"data\": {\"rollBreakCountTotal\": 6}",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    },
+                    "401": {
+                        "description": "未授权",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    },
+                    "500": {
+                        "description": "服务器错误",
+                        "schema": {
+                            "$ref": "#/definitions/schema.Response"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "schema.Response": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "object"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "securityDefinitions": {
+        "ApiKeyAuth": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}

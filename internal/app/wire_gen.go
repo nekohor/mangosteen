@@ -14,7 +14,7 @@ import (
 )
 
 import (
-	_ "github.com/nekohor/mangosteen/internal/app/swagger"
+	_ "github.com/nekohor/mangosteen/docs/swagger"
 )
 
 // Injectors from wire.go:
