@@ -1,0 +1,59 @@
+{"level":"info","time":"2021-03-08T15:29:00.309+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-08T15:31:23.342+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-08T15:31:23.343+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-08T15:31:25.976+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:07:54.702+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:11:17.314+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:11:17.315+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:11:26.367+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:32:40.508+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:32:40.509+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:32:47.739+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:34:04.963+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:34:04.963+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:34:13.340+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:36:11.444+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:36:11.445+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:36:19.387+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:40:43.443+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:40:43.443+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:41:07.023+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T17:51:32.848+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T17:51:32.848+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T17:52:15.675+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:07:48.875+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:07:48.875+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:20:48.289+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:34:42.675+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:34:42.675+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:34:54.207+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:37:04.708+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:37:04.708+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:37:07.282+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:41:09.779+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:41:09.780+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:41:18.646+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:41:59.950+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:41:59.950+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:46:27.364+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:50:56.100+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:50:56.100+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:51:03.852+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T18:52:56.300+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T18:52:56.300+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T18:53:02.865+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T19:03:01.557+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T19:03:01.558+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T19:03:09.921+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T19:04:34.027+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T19:04:34.028+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T19:04:40.757+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-03-11T19:05:23.843+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-03-11T19:05:23.844+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-03-11T19:05:31.715+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-08T12:53:03.595+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-08T12:56:27.773+0800","linenum":"app/app.go:100","msg":"接收到信号[interrupt]"}
+{"level":"info","time":"2021-05-08T12:56:27.773+0800","linenum":"app/app.go:112","msg":"服务退出"}
+{"level":"info","time":"2021-05-08T12:56:46.949+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-21T08:44:09.500+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
+{"level":"info","time":"2021-05-21T11:03:47.996+0800","linenum":"app/server.go:26","msg":"HTTP server is running at 0.0.0.0:9631."}
