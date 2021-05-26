@@ -9,10 +9,10 @@ import (
 )
 
 // VERSION 版本号，可以通过编译的方式指定版本号：go build -ldflags "-X main.VERSION=x.x.x"
-var VERSION = "0.1.1"
+var VERSION = "0.3.0"
 
 // @title 宇阳的杂七杂八微服务
-// @version 0.0.1
+// @version 0.3.0
 // @description 提供与FSP平台基础业务有关的杂七杂八微服务
 
 // @securityDefinitions.apikey ApiKeyAuth
