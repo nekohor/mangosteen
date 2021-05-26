@@ -77,19 +77,19 @@ func (s *UnqualReasonService) GetCoilIdsFromUnqualHistories(unqualHistories []*m
 	return coilIds
 }
 
-func (s *UnqualReasonService) SaveUnqualReasonsByDate(queryDate string) {
-	histories := s.GetUnqualHistoriesByDate(queryDate)
-	coilIds := s.GetCoilIdsFromUnqualHistories(histories)
-	if len(histories) == 0 {
-		return
-	}
-	for _, unqualCategory := range s.GetUnqualCategories() {
-		historiesWithSameCategory := s.GetUnqualHistoriesByUnqualCategory(histories, unqualCategory)
-		for _, coilId := range coilIds {
-			historiesWithSameCategoryAndCoilId := s.GetUnqualHistoriesByCoilId(historiesWithSameCategory, coilId)
-		}
-	}
-}
+//func (s *UnqualReasonService) SaveUnqualReasonsByDate(queryDate string) {
+//	histories := s.GetUnqualHistoriesByDate(queryDate)
+//	coilIds := s.GetCoilIdsFromUnqualHistories(histories)
+//	if len(histories) == 0 {
+//		return
+//	}
+//	for _, unqualCategory := range s.GetUnqualCategories() {
+//		historiesWithSameCategory := s.GetUnqualHistoriesByUnqualCategory(histories, unqualCategory)
+//		for _, coilId := range coilIds {
+//			historiesWithSameCategoryAndCoilId := s.GetUnqualHistoriesByCoilId(historiesWithSameCategory, coilId)
+//		}
+//	}
+//}
 
 func (s *UnqualReasonService) GetUnqualReasonByUnqualHistories(historiesWithSameCategoryAndCoilId []*models.UnqualHistory) {
 
