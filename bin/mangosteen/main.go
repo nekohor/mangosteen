@@ -40,4 +40,7 @@ func main() {
 	}
 }
 
+var framework = "Goframe"
+// {{ fmt.Sprintf("%s 牛逼", framework) }}
+
 

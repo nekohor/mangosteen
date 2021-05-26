@@ -24,13 +24,24 @@ scp conf.toml root@170.0.35.150:applications/z7z8
 # @cmd mangosteen src with cgo mangosteen.zip include vendor
 git config --global core.autocrlf input
 scp mangosteen.zip root@170.0.35.150:src
+ssh root@170.0.35.150
 unzip mangosteen.zip -d mangosteen
 
 cd mangosteen
 export GO111MODULE=on
 export GO111MODULE=off
 /bin/cp -rf vendor/. /root/go/src
+
+export DB2HOME=/root/ibmdb/clidriver
+export CGO_CFLAGS=-I$DB2HOME/include
+export CGO_LDFLAGS=-L$DB2HOME/lib
+export LD_LIBRARY_PATH=/root/ibmdb/clidriver/lib
 go build
+
+mv /root/applications/z7z8/mangosteen /root/applications/z7z8/backup/mangosteen.backup
+mv /root/applications/z7z8/conf.toml /root/applications/z7z8/backup/conf.toml.backup
+cp /root/src/mangosteen/mangosteen /root/applications/z7z8/mangosteen
+cp /root/src/mangosteen/conf.toml /root/applications/z7z8/conf.toml
 
 # supervisor
 pip install supervisor-XXX.wheel
@@ -71,12 +82,14 @@ vim /etc/systemd/system/mangosteen.service
 [Unit]
 Description=mangosteen server
 [Service]
+EnvironmentFile=-/root/applications/env-service
 WorkingDirectory=/root/applications/z7z8
 ExecStart=/root/applications/z7z8/mangosteen serve -c /root/applications/z7z8/conf.toml
 ExecReload=/bin/kill -HUP $MAINPID
 KillMode=process
-Restart=on-failure
+# Restart=on-failure  # 没有正常运行之前不要开这个
 Type=notify
+
 [Install]
 Alias=mangosteen.service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,11 +98,19 @@ mangosteen.service
 WorkingDirectory
 
 systemctl status mangosteen -l
+
+systemctl reset-failed mangosteen.service
+
+systemctl daemon-reload
+systemctl enable mangosteen.service
+systemctl start mangosteen
+
+
 systemctl start mangosteen
 systemctl restart mangosteen
 systemctl stop mangosteen
-
-go test -v ./internal/apps/unqualified/services -test.run TestUnqualSaveService_SaveUnqualHistoriesByDate
+systemctl kill mangosteen.service
+go test -v ./internal/apps/unqualified/services/services_test -test.run TestUnqualSaveService_SaveUnqualHistoriesByDate
 
 go test -v ./internal/apps/unqualified/services -test.run TestRollBreakStatService_GetRollBreakStatResult
 go test -v ./internal/apps/fsp/dao -test.run TestLevel2AssuringDao_GetAssuringValueRecordByCoilId

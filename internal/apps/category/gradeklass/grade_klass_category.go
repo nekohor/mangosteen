@@ -14,6 +14,10 @@ func (k *GradeKlass) IsAgreementProduct(steelGrade string) bool {
 }
 
 func (k *GradeKlass) IsPicklePlate(steelGrade string) bool {
+	if k.IsBeamSteel(steelGrade) {
+		return false
+	}
+
 	if k.IsSpecialPicklePlate(steelGrade) {
 		return true
 	}
